@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas · ALOS</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.svg" alt="">
+        <span class="brand-name">ALOS</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="habitaciones.html">HABITACIONES</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="ofertas.html">OFERTAS</a>
+        <a href="experiencias.html">EXPERIENCIAS</a>
+        <a href="ubicacion.html">UBICACIÓN</a>
+        <a href="contacto.html">CONTACTOS</a>
+      </nav>
+      <a class="btn btn-gold" href="reservas.html">RESERVAR</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">RESERVAS</p>
+        <h1>Confirma tu estadía en pocos pasos</h1>
+        <p>Consulta disponibilidad y déjanos tus datos. Te escribimos para cerrar la reserva.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <form class="panel form" id="reserve-form">
+          <div class="form-row">
+            <label>Nombre completo<input name="nombre" required></label>
+            <label>Correo<input type="email" name="correo" required></label>
+          </div>
+          <div class="form-row">
+            <label>Llegada<input name="llegada" placeholder="DD/MM/AAAA" required></label>
+            <label>Salida<input name="salida" placeholder="DD/MM/AAAA" required></label>
+          </div>
+          <div class="form-row">
+            <label>Huéspedes
+              <select name="huespedes">
+                <option>FAMILIA</option>
+                <option>PAREJA</option>
+                <option>1 HUÉSPED</option>
+                <option>2 HUÉSPEDES</option>
+                <option>3 HUÉSPEDES</option>
+                <option>4 HUÉSPEDES</option>
+              </select>
+            </label>
+            <label>Habitación
+              <select name="habitacion">
+                <option>SUITE</option>
+                <option>DOBLE</option>
+                <option>FAMILIAR</option>
+              </select>
+            </label>
+          </div>
+          <label>Notas<textarea name="notas" rows="4" placeholder="Hora de llegada, cuna, traslado..."></textarea></label>
+          <button class="btn btn-gold" type="submit">ENVIAR SOLICITUD</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>ALOS · Hospedaje boutique · Sierra central</span>
+      <span>© 2026 ALOS</span>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

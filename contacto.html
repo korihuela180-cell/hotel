@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · ALOS</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="assets/logo.svg" alt="">
+        <span class="brand-name">ALOS</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="habitaciones.html">HABITACIONES</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="ofertas.html">OFERTAS</a>
+        <a href="experiencias.html">EXPERIENCIAS</a>
+        <a href="ubicacion.html">UBICACIÓN</a>
+        <a class="active" href="contacto.html">CONTACTOS</a>
+      </nav>
+      <a class="btn btn-gold" href="reservas.html">RESERVAR</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">CONTACTO</p>
+        <h1>Estamos para ayudarte</h1>
+        <p>Antes, durante y después de tu viaje. Escríbenos y te respondemos con calma.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap split">
+        <form class="panel form" id="contact-form">
+          <label>Nombre<input name="nombre" required></label>
+          <label>Correo<input type="email" name="correo" required></label>
+          <label>Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
+          <button class="btn btn-gold" type="submit">ENVIAR</button>
+        </form>
+        <aside class="stack">
+          <article class="panel"><h3>Teléfono</h3><p class="muted">+51 999 000 214</p></article>
+          <article class="panel"><h3>Correo</h3><p class="muted">hola@alos.pe</p></article>
+          <article class="panel"><h3>Horario</h3><p class="muted">Recepción todos los días, 7:00 – 22:00</p></article>
+          <article class="panel"><h3>WhatsApp</h3><p class="muted">Consultas rápidas de disponibilidad y traslados.</p></article>
+          <article class="panel"><h3>Idiomas</h3><p class="muted">Español e inglés básico en recepción.</p></article>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>ALOS · Hospedaje boutique · Sierra central</span>
+      <span>© 2026 ALOS</span>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
